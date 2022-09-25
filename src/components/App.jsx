@@ -4,9 +4,12 @@ import user from 'data/user';
 import { Statistics } from 'components/Statistics/Statistics';
 import data from 'data/data';
 
+import { FriendList } from 'components/FriendList/FriendList';
+import friends from 'data/friends';
+
 export const App = () => {
   return (
-    <div>
+    <div className="appWrapper">
       <Profile
         username={user.username}
         tag={user.tag}
@@ -14,8 +17,11 @@ export const App = () => {
         avatar={user.avatar}
         stats={user.stats}
       />
+
       <Statistics title="Upload stats" stats={data} />
       <Statistics stats={data} />
+
+      <FriendList friends={friends} />
     </div>
   );
 };

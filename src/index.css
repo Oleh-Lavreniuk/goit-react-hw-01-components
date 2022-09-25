@@ -13,3 +13,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.appWrapper {
+  font-family: 'Roboto', sans-serif;
+  padding: 40px 20px;
+}
